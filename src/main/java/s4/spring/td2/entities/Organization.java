@@ -42,6 +42,10 @@ public class Organization {
 		groupes = new ArrayList<>();
 	}
 	
+	public void addGroup(Groupe groupe) {
+		groupes.add(groupe);
+		groupe.setOrganization(this);
+	}
 	
 	public int getId() {
 		return id;
